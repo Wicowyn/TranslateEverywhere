@@ -49,8 +49,21 @@ public class Manager {
 					tFile.getList().add(new Line(null, null));
 				}
 				else{
-					tFile.getList().add(new Line(parts[0], parts[1]));
+					String left=parts[0].trim();
+					String right=parts[1].trim();
+					
+					switch (right) {
+					case "":
+						throw new RuntimeException(parts[0]+" right hand is empty");
+					case "?":
+						System.out.println("Ignore : "+left);
+						break;
+					default:
+						tFile.getList().add(new Line(left, right));
+						break;
+					}
 				}
+				
 			}
 		}
 		
