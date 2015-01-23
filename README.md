@@ -1,7 +1,7 @@
 TranslateEverywhere
 ===================
 
-This tool aims to facilitate the sharing of files between different language platforms.
+This tool aims to facilitate the sharing of languages files between different mobile platforms.
 
 
 ## Motivation
